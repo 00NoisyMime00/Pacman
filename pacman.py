@@ -1,12 +1,3 @@
-#NAME -  NIKUNJ SINGHAL
-#ROLL NUMBER - 2018249
-#SECTION - B
-#GROUP - 2
-
-
-
-
-
 import pygame
 from pygame.locals import *
 from numpy import loadtxt
@@ -136,14 +127,14 @@ ghost1_position = [6,6]
 ghost2_position = [9,6]
 ghost3_position = [6,9]
 background.fill((0,0,0))
-pacman1 = pygame.image.load('pacman1.gif').convert()
-pacman2 = pygame.image.load('pacman2.gif').convert()
-pacman3 = pygame.image.load('pacman3.gif').convert()
-pacman4 = pygame.image.load('pacman4.gif').convert()
-g11 = pygame.image.load('0.png').convert()
-g21 = pygame.image.load('9.png').convert()
-g31 = pygame.image.load('21.png').convert()
-t = pygame.image.load('tunnel.jpg').convert()
+pacman1 = pygame.image.load("./pictures/pacman1.gif").convert()
+pacman2 = pygame.image.load("./pictures/pacman2.gif").convert()
+pacman3 = pygame.image.load('./pictures/pacman3.gif').convert()
+pacman4 = pygame.image.load('./pictures/pacman4.gif').convert()
+g11 = pygame.image.load('./pictures/0.png').convert()
+g21 = pygame.image.load('./pictures/9.png').convert()
+g31 = pygame.image.load('./pictures/21.png').convert()
+t = pygame.image.load('./pictures/tunnel.jpg').convert()
 
 
 slowit1 = 0
