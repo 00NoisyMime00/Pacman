@@ -145,6 +145,8 @@ def move_ghost(ghost1_position,ghost2_position,ghost3_position):
 	global slowit1,slowit2, slowit3
 	if slowit1 % 2 == 0:
 		
+
+		
 		b1=ri(0,1)
 		if b1==0:
 			a1=ri(-1,1)
@@ -221,10 +223,8 @@ while True:
 		draw_ghost(screen, ghost1_position, 0)
 		draw_ghost(screen, ghost2_position, 1)
 		draw_ghost(screen, ghost3_position, 2)
-
-
-		
 		keys = pygame.key.get_pressed()
+
 		if pacman_position == (16,7) and keys[K_RIGHT]:
 			pacman_position = (0,7)
 		if pacman_position == (0, 7) and keys[K_LEFT]:
@@ -234,10 +234,6 @@ while True:
 			move_direction = LEFT
 			pacman_position = add_to_pos(pacman_position, move_direction)
 			direction = 'left'
-
-
-
-
 
 		if keys[pygame.K_RIGHT] and layout[pacman_position[1]][pacman_position[0]+1]!='w' :
 			move_direction = RIGHT
